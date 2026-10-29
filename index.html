@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our 3rd Anniversary 💗</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 20px 14px;
+  text-align: center;
+  font-family: sans-serif;
+  color: #a13f69;
+  background: linear-gradient(135deg, #ffe1ed, #fff5f8, #ffd6e7);
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 480px;
+  margin: auto;
+  position: relative;
+}
+
+h1 {
+  color: #e65391;
+  font-size: 34px;
+}
+
+h2 { color: #d94f86; }
+
+p {
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+.card {
+  background: rgba(255,255,255,.92);
+  border-radius: 25px;
+  padding: 23px 18px;
+  margin: 22px 0;
+  box-shadow: 0 7px 25px #d96c9c30;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  background: #ed7eaa;
+  color: white;
+  padding: 13px 22px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+button:active { transform: scale(.97); }
+
+#letter {
+  display: none;
+  text-align: left;
+  background: #fff5f8;
+  padding: 17px;
+  margin-top: 20px;
+  border-radius: 18px;
+  animation: appear .7s ease;
+}
+
+#letter h2, .center { text-align: center; }
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.photos img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 15px;
+  background: #ffe0ed;
+}
+
+.heart {
+  position: fixed;
+  top: -30px;
+  pointer-events: none;
+  animation: fall linear forwards;
+  z-index: 5;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.small { font-size: 12px; color: #bb7795; }
+</style>
+</head>
+<body>
+<main>
+
+  <div style="font-size:38px">💗 💕 💗</div>
+  <h1>Happy Anniversary</h1>
+  <h2>3 Years With You 🌷</h2>
+  <p>สุขสันต์วันครบรอบ 3 ปีนะคะที่รัก</p>
+
+  <section class="card">
+    <div style="font-size:50px">🧸💖</div>
+    <h2>ถึงคนพิเศษของหนู</h2>
+    <p>มีจดหมายเล็ก ๆ ที่หนูตั้งใจเขียนให้ที่รัก 💌</p>
+
+    <button onclick="openLetter()">
+      💌 กดเปิดจดหมายลับ
+    </button>
+
+    <div id="letter">
+      <h2>ถึงคนพิเศษของหนู 💗</h2>
+
+      <p>สุขสันต์วันครบรอบ 3 ปีนะคะที่รัก 💖</p>
+
+      <p>ขอบคุณที่เข้ามาเป็นส่วนหนึ่งในชีวิตหนู
+      ขอบคุณที่คอยอยู่ข้าง ๆ กันมาตลอด 3 ปี
+      เราผ่านอะไรมาด้วยกันตั้งหลายอย่างเลยเนอะ
+      ทั้งวันที่มีความสุขและวันที่เหนื่อย</p>
+
+      <p>หนูอาจจะไม่ได้เป็นคนที่ดีที่สุด
+      แต่หนูจะพยายามดูแลความสัมพันธ์ของเราให้ดีที่สุดนะคะ
+      ถ้าวันไหนเรามีเรื่องไม่เข้าใจกัน
+      หนูก็อยากให้เราค่อย ๆ พูดคุยและปรับเข้าหากัน</p>
+
+      <p>หนูดีใจมาก ๆ ที่มีเธออยู่ในชีวิต
+      ขอให้เรามีความทรงจำดี ๆ ด้วยกันไปอีกนาน ๆ เลยนะ</p>
+
+      <p>หนูรักเธอมาก ๆ นะคะ
+      อยู่เป็นความสุขของกันและกันไปนาน ๆ เลยนะ 💗🌷</p>
+
+      <p class="center" style="font-size:30px">
+        💗 💕 💖 💕 💗
+      </p>
+      <p class="center">จากหนู คนที่รักป๊าที่สุด 💌</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Our Memories 📸</h2>
+
+    <div class="photos">
+      <img src="photo1.jpg" alt="รูปความทรงจำที่หนึ่ง">
+      <img src="photo2.jpg" alt="รูปความทรงจำที่สอง">
+    </div>
+
+    <p class="small">
+      รูปของเรากับความทรงจำดี ๆ ที่หนูอยากเก็บไว้ 💗
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>ขอบคุณที่มีที่รัก 🌸</h2>
+    <p>3 ปีที่ผ่านมาเป็นความทรงจำที่มีความหมายกับหนูมาก ๆ</p>
+    <p>ขอให้เราเป็นความสุขของกันตลอดไปนะคะ 💞</p>
+  </section>
+
+  <p>Made with love, just for you ♡</p>
+
+</main>
+
+<script>
+function openLetter() {
+  const letter = document.getElementById("letter");
+  letter.style.display = "block";
+  letter.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
+}
+
+function makeHeart() {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.textContent = ["💗", "💕", "💖", "🌸"][
+    Math.floor(Math.random() * 4)
+  ];
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = (15 + Math.random() * 18) + "px";
+  heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 8500);
+}
+
+setInterval(makeHeart, 650);
+</script>
+</body>
+</html>
+
